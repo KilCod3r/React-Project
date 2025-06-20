@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <ul id="messages"></ul>
+  <form id="form" autocomplete="off">
+    <label for="input" style="position:absolute;left:-9999px;">Message</label>
+    <input id="input" placeholder="Type a message..." title="Message" />
+    <button type="submit">Send</button>
+  </form>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
